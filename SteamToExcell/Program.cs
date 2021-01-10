@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.IO;
 using EPPlusTest;
 using OfficeOpenXml;
+using SteamToExcell.Resources;
 
 namespace SteamToExcell
 {
@@ -15,8 +16,8 @@ namespace SteamToExcell
     {
         static void Main(string[] args)
         {
-            
-            string steamKey = "";
+
+            string steamKey = key.steamkey; //steamkey is hidden in folder resources but in gitignore due to sensitive data
             Console.WriteLine("give your steam id");
             string steamId = Console.ReadLine();
             HttpClient client = CreateHTTPClient();
